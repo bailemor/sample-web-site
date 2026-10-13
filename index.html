@@ -40,8 +40,17 @@ p:last-child { margin-bottom: 0; }
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); flex-wrap: wrap; padding-block: var(--space-3); }
 .site-header .logo { display: block; padding-block: 20px; }
 .site-header .logo img { width: var(--logo-header); height: auto; }
-.site-header nav a { font-weight: 600; text-decoration: none; color: var(--heading); padding-block: var(--space-1); border-bottom: 3px solid transparent; }
-.site-header nav a:hover { border-bottom-color: var(--dark-green); }
+.site-nav ul { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: var(--space-4); }
+.site-nav a { display: inline-block; font-weight: 600; text-decoration: none; color: var(--heading); padding-block: var(--space-1); border-bottom: 3px solid transparent; }
+.site-nav a:hover { border-bottom-color: var(--dark-green); }
+.site-nav a.nav-cta { background: var(--dark-green); color: var(--on-brand); border: 2px solid var(--dark-green); padding: 10px var(--space-4); }
+.site-nav a.nav-cta:hover { background: var(--black); border-color: var(--black); }
+.menu-toggle { display: none; align-items: center; gap: var(--space-2); min-height: 44px; padding: 0 var(--space-3); font: 600 16px/1 var(--font-sans); color: var(--heading); background: var(--surface); border: 2px solid var(--dark-green); cursor: pointer; }
+.menu-toggle:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+.menu-toggle .bars, .menu-toggle .bars::before, .menu-toggle .bars::after { display: block; width: 18px; height: 2px; background: var(--dark-green); position: relative; }
+.menu-toggle .bars::before, .menu-toggle .bars::after { content: ""; position: absolute; left: 0; }
+.menu-toggle .bars::before { top: -6px; }
+.menu-toggle .bars::after { top: 6px; }
 
 /* Hero */
 .hero { background: var(--surface-brand); color: var(--on-brand); overflow: hidden; }
@@ -93,6 +102,15 @@ p:last-child { margin-bottom: 0; }
 .site-footer img { width: var(--logo-feature); height: auto; }
 .site-footer p { margin: 0; font-size: 13px; line-height: 1.4; }
 
+@media (max-width: 960px) {
+  .menu-toggle { display: inline-flex; }
+  .site-nav { flex-basis: 100%; }
+  .site-nav[data-open="false"] { display: none; }
+  .site-nav ul { flex-direction: column; align-items: stretch; gap: 0; padding-bottom: var(--space-3); border-top: 1px solid var(--rule); }
+  .site-nav li a { display: block; padding: var(--space-3) 0; border-bottom: 1px solid var(--rule); }
+  .site-nav li a:hover { border-bottom-color: var(--dark-green); }
+  .site-nav a.nav-cta { margin-top: var(--space-3); text-align: center; }
+}
 @media (max-width: 860px) {
   .story .wrap, .services .wrap { grid-template-columns: minmax(0, 1fr); gap: var(--space-5); }
   .definition { position: static; }
@@ -114,7 +132,16 @@ p:last-child { margin-bottom: 0; }
 <header class="site-header">
   <div class="wrap">
     <a class="logo" href="/"><img src="baile-mor-logo.png" alt="Baile Mór Strategy logo" width="144" height="39"></a>
-    <nav aria-label="Main"><a href="founder.html">Meet the founder</a></nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="bars" aria-hidden="true"></span>Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="our-work.html">Our Work</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a class="nav-cta" href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
   </div>
 </header>
 
@@ -180,6 +207,24 @@ p:last-child { margin-bottom: 0; }
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+  // Phone menu: the nav is always visible on wide screens; below 960px the button shows and hides it.
+  (function () {
+    var btn = document.querySelector('.menu-toggle');
+    var nav = document.getElementById('site-nav');
+    var narrow = window.matchMedia('(max-width: 960px)');
+    function setOpen(open) {
+      btn.setAttribute('aria-expanded', String(open));
+      btn.lastChild.textContent = open ? 'Close' : 'Menu';
+      nav.setAttribute('data-open', String(open));
+    }
+    btn.addEventListener('click', function () { setOpen(btn.getAttribute('aria-expanded') !== 'true'); });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && btn.getAttribute('aria-expanded') === 'true') { setOpen(false); btn.focus(); }
+    });
+    function sync() { if (narrow.matches) setOpen(false); else nav.removeAttribute('data-open'); }
+    if (narrow.addEventListener) narrow.addEventListener('change', sync); else narrow.addListener(sync);
+    sync();
+  })();
 </script>
 </body>
 </html>
