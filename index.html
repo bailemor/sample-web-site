@@ -17,7 +17,16 @@
     <nav class="site-nav" id="site-nav" aria-label="Main">
       <ul>
         <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
+        <li class="has-sub">
+          <a href="services.html">Services</a>
+          <button class="sub-toggle" type="button" aria-expanded="false" aria-controls="services-menu"><span class="visually-hidden">Show services</span></button>
+          <ul class="sub-menu" id="services-menu">
+            <li><a href="financial-strategy.html">Financial Strategy</a></li>
+            <li><a href="governance.html">Governance</a></li>
+            <li><a href="operational-improvement.html">Operational Improvement</a></li>
+            <li><a href="ai-strategy.html">AI Strategy</a></li>
+          </ul>
+        </li>
         <li><a href="our-work.html">Our Work</a></li>
         <li><a href="case-studies.html">Case Studies</a></li>
         <li><a class="nav-cta" href="contact.html">Contact Us</a></li>
