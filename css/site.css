@@ -247,3 +247,7 @@ p:last-child { margin-bottom: 0; }
 .framework-list li { background: var(--surface); padding: var(--space-5) var(--space-4); border-top: 4px solid var(--accent); font: 700 22px/1.25 var(--font-serif); color: var(--heading); }
 @media (max-width: 860px) { .framework-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 420px) { .framework-list { grid-template-columns: minmax(0, 1fr); } }
+
+/* Service names on the home and About pages link to their service pages */
+.service-list a, .help-list h3 a { color: inherit; text-decoration: none; }
+.service-list a:hover, .help-list h3 a:hover { text-decoration: underline; }
