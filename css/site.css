@@ -1,0 +1,163 @@
+/* Baile Mór Web design system: tokens */
+@font-face { font-family: "Source Sans 3"; src: url("../fonts/SourceSans3-latin.woff2") format("woff2"); font-weight: 200 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Source Sans 3"; src: url("../fonts/SourceSans3-Italic-latin.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+:root {
+  --dark-green: #2b472d; --lime-green: #d0d529; --mauve: #beb5b6; --light-grey: #f1f1f2; --white: #ffffff; --black: #000000;
+  --surface: var(--white); --surface-alt: var(--light-grey); --surface-brand: var(--dark-green);
+  --ink: var(--black); --heading: var(--dark-green); --on-brand: var(--white);
+  --accent: var(--lime-green); --on-accent: var(--dark-green); --rule: var(--mauve);
+  --focus-ring: var(--dark-green); --focus-ring-on-brand: var(--lime-green); --link: var(--dark-green);
+  --space-1: 4px; --space-2: 8px; --space-3: 16px; --space-4: 24px; --space-5: 32px; --space-6: 48px; --space-7: 64px; --space-8: 96px;
+  --content-max: 1200px; --measure: 680px; --logo-header: 144px; --logo-feature: 240px;
+  --font-serif: Georgia, "Times New Roman", Times, serif;
+  --font-sans: "Source Sans 3", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  color-scheme: light;
+}
+
+/* Base */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--surface); color: var(--ink); font: 400 16px/1.5 var(--font-sans); }
+img { max-width: 100%; display: block; }
+a { color: var(--link); text-underline-offset: 2px; }
+a:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+p { margin: 0 0 var(--space-3); }
+p:last-child { margin-bottom: 0; }
+.wrap { max-width: var(--content-max); margin: 0 auto; padding-inline: var(--space-4); }
+.skip { position: absolute; left: var(--space-3); top: -60px; background: var(--dark-green); color: var(--on-brand); padding: var(--space-2) var(--space-3); z-index: 10; }
+.skip:focus { top: var(--space-3); }
+
+/* Header */
+.site-header { background: var(--surface); }
+.site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); flex-wrap: wrap; padding-block: var(--space-3); }
+.site-header .logo { display: block; padding-block: 20px; }
+.site-header .logo img { width: var(--logo-header); height: auto; }
+.site-nav ul { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: var(--space-4); }
+.site-nav a { display: inline-block; font-weight: 600; text-decoration: none; color: var(--heading); padding-block: var(--space-1); border-bottom: 3px solid transparent; }
+.site-nav a:hover { border-bottom-color: var(--dark-green); }
+.site-nav a.nav-cta { background: var(--dark-green); color: var(--on-brand); border: 2px solid var(--dark-green); padding: 10px var(--space-4); }
+.site-nav a.nav-cta:hover { background: var(--black); border-color: var(--black); }
+.menu-toggle { display: none; align-items: center; gap: var(--space-2); min-height: 44px; padding: 0 var(--space-3); font: 600 16px/1 var(--font-sans); color: var(--heading); background: var(--surface); border: 2px solid var(--dark-green); cursor: pointer; }
+.menu-toggle:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+.menu-toggle .bars, .menu-toggle .bars::before, .menu-toggle .bars::after { display: block; width: 18px; height: 2px; background: var(--dark-green); position: relative; }
+.menu-toggle .bars::before, .menu-toggle .bars::after { content: ""; position: absolute; left: 0; }
+.menu-toggle .bars::before { top: -6px; }
+.menu-toggle .bars::after { top: 6px; }
+
+/* Hero */
+.hero { background: var(--surface-brand); color: var(--on-brand); overflow: hidden; }
+.hero .wrap { position: relative; padding-block: var(--space-8); }
+.eyebrow { display: inline-block; margin: 0 0 var(--space-5); font-weight: 600; font-size: 13px; line-height: 1.4; letter-spacing: .1em; text-transform: uppercase; padding-bottom: var(--space-2); border-bottom: 3px solid var(--accent); }
+.hero h1 { position: relative; margin: 0; font: 700 clamp(40px, 7vw, 76px)/1.05 var(--font-serif); max-width: 14ch; text-wrap: balance; }
+/* The slanted lime bar is the acute accent from the logo's Ó. */
+.accent-mark { display: block; width: 1.3em; height: .32em; margin: 0 0 .28em; background: var(--accent); clip-path: polygon(0 34%, 100% 0, 100% 66%, 0 100%); font-size: clamp(40px, 7vw, 76px); }
+
+/* Story */
+.story { padding-block: var(--space-8); }
+.story .wrap { display: grid; grid-template-columns: minmax(0, 300px) minmax(0, var(--measure)); gap: var(--space-7); align-items: start; }
+.definition { background: var(--surface-alt); padding: var(--space-4); position: sticky; top: var(--space-4); }
+.definition .term { margin: 0; font: 700 32px/1.1 var(--font-serif); color: var(--heading); }
+.definition .meta { margin: var(--space-2) 0 var(--space-3); font-size: 13px; line-height: 1.4; letter-spacing: .08em; text-transform: uppercase; font-weight: 600; color: var(--ink); }
+.definition .gloss { margin: 0; padding-top: var(--space-3); border-top: 1px solid var(--rule); font: italic 400 19px/1.4 var(--font-serif); color: var(--heading); }
+.story-text { font-size: 18px; line-height: 1.6; }
+.story-text p { margin-bottom: var(--space-4); }
+.story-text .lead { font: 400 23px/1.45 var(--font-serif); color: var(--heading); }
+
+/* Belief */
+.belief { background: var(--surface-alt); padding-block: var(--space-8); }
+.belief blockquote { margin: 0; max-width: 860px; }
+.belief blockquote p { font: italic 400 clamp(22px, 2.6vw, 30px)/1.4 var(--font-serif); color: var(--heading); margin-bottom: var(--space-4); }
+.belief blockquote p.closer { font-style: normal; font-weight: 700; }
+
+/* Services */
+.services { padding-block: var(--space-8); }
+.services .wrap { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: var(--space-7); align-items: start; }
+.services .intro { font: 700 23px/1.35 var(--font-serif); color: var(--heading); margin: 0; }
+.service-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-3); }
+.service-list li { background: var(--surface-alt); padding: var(--space-4); font-weight: 600; font-size: 18px; line-height: 1.3; color: var(--heading); min-height: 112px; display: flex; flex-direction: column; justify-content: space-between; gap: var(--space-3); }
+.service-list li::before { content: ""; width: 40px; height: 10px; background: var(--accent); clip-path: polygon(0 34%, 100% 0, 100% 66%, 0 100%); }
+
+/* Call to action */
+.cta { background: var(--surface-brand); color: var(--on-brand); padding-block: var(--space-8); }
+.cta .wrap { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: var(--space-5); }
+.cta h2 { margin: 0; font: 700 clamp(30px, 4.4vw, 48px)/1.12 var(--font-serif); max-width: 16ch; text-wrap: balance; }
+.cta h2 span { color: var(--accent); }
+.btn { display: inline-flex; align-items: center; gap: var(--space-2); min-height: 52px; padding: 0 var(--space-5); font: 600 18px/1.25 var(--font-sans); text-decoration: none; border: 2px solid var(--accent); background: var(--accent); color: var(--on-accent); }
+.btn:hover { background: var(--white); border-color: var(--white); }
+.btn:focus-visible { outline: 2px solid var(--focus-ring-on-brand); outline-offset: 3px; }
+.btn .arrow { transition: transform .2s ease; }
+.btn:hover .arrow { transform: translateX(4px); }
+
+/* Footer */
+.site-footer { background: var(--surface-alt); padding-block: var(--space-7) var(--space-5); }
+.site-footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: var(--space-4); }
+.site-footer img { width: var(--logo-feature); height: auto; }
+.site-footer p { margin: 0; font-size: 13px; line-height: 1.4; }
+
+@media (max-width: 960px) {
+  .menu-toggle { display: inline-flex; }
+  .site-nav { flex-basis: 100%; }
+  .site-nav[data-open="false"] { display: none; }
+  .site-nav ul { flex-direction: column; align-items: stretch; gap: 0; padding-bottom: var(--space-3); border-top: 1px solid var(--rule); }
+  .site-nav li a { display: block; padding: var(--space-3) 0; border-bottom: 1px solid var(--rule); }
+  .site-nav li a:hover { border-bottom-color: var(--dark-green); }
+  .site-nav a.nav-cta { margin-top: var(--space-3); text-align: center; }
+}
+@media (max-width: 860px) {
+  .story .wrap, .services .wrap { grid-template-columns: minmax(0, 1fr); gap: var(--space-5); }
+  .definition { position: static; }
+}
+@media (max-width: 560px) {
+  .wrap { padding-inline: var(--space-3); }
+  .hero .wrap, .story, .belief, .services, .cta { padding-block: var(--space-6); }
+  .service-list { grid-template-columns: minmax(0, 1fr); }
+  .service-list li { min-height: 0; }
+  .story-text { font-size: 17px; }
+  .story-text .lead { font-size: 20px; }
+}
+@media (prefers-reduced-motion: reduce) { .btn .arrow { transition: none; } }
+
+/* Current page in the main nav */
+.site-nav a[aria-current="page"] { border-bottom-color: var(--dark-green); }
+
+/* Photo placeholders: swap each for an <img> when the photographer's files arrive */
+.photo-slot { background: var(--surface-alt); border: 2px dashed var(--rule); display: flex; align-items: center; justify-content: center; text-align: center; padding: var(--space-4); color: var(--heading); font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+.photo-slot img { width: 100%; height: 100%; object-fit: cover; }
+
+/* About page */
+.about-hero { background: var(--surface-brand); color: var(--on-brand); }
+.about-hero .wrap { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); gap: var(--space-7); align-items: end; padding-block: var(--space-8) 0; }
+.about-hero .intro { padding-bottom: var(--space-8); }
+.about-hero h1 { margin: 0; font: 700 clamp(40px, 6vw, 64px)/1.05 var(--font-serif); }
+.about-hero .role { margin: var(--space-3) 0 var(--space-5); font-size: 20px; line-height: 1.4; }
+.about-hero .tagline { margin: 0; font: italic 400 22px/1.4 var(--font-serif); color: var(--accent); }
+.about-hero .portrait { aspect-ratio: 4 / 5; max-width: 100%; border: 0; background: var(--light-grey); }
+.about-intro { padding-block: var(--space-8) var(--space-7); }
+.about-intro .wrap { max-width: calc(var(--measure) + 2 * var(--space-4)); }
+.about-intro .lead { font: 400 26px/1.4 var(--font-serif); color: var(--heading); margin-bottom: var(--space-5); text-wrap: pretty; }
+.about-intro p { font-size: 18px; line-height: 1.6; margin-bottom: var(--space-4); }
+.about-photo-wide { aspect-ratio: 21 / 9; }
+.help { background: var(--surface-alt); padding-block: var(--space-8); }
+.help h2 { margin: 0 0 var(--space-5); font: 700 clamp(26px, 3vw, 34px)/1.2 var(--font-serif); color: var(--heading); }
+.help-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-4); }
+.help-list li { background: var(--surface); padding: var(--space-5); display: flex; flex-direction: column; gap: var(--space-3); }
+.help-list li::before { content: ""; width: 48px; height: 12px; background: var(--accent); clip-path: polygon(0 34%, 100% 0, 100% 66%, 0 100%); }
+.help-list h3 { margin: 0; font: 700 23px/1.25 var(--font-serif); color: var(--heading); }
+.help-list p { margin: 0; font-size: 17px; line-height: 1.55; }
+.about-quote { padding-block: var(--space-8); }
+.about-quote blockquote { margin: 0 auto; max-width: 860px; font: italic 400 clamp(22px, 2.6vw, 30px)/1.4 var(--font-serif); color: var(--heading); text-align: left; }
+.about-quote blockquote p { margin: 0; }
+.cta p.cta-line { margin: var(--space-3) 0 0; font-size: 19px; line-height: 1.5; max-width: 40ch; }
+
+@media (max-width: 860px) {
+  .about-hero .wrap { grid-template-columns: minmax(0, 1fr); gap: var(--space-5); padding-bottom: var(--space-6); }
+  .about-hero .intro { padding-bottom: 0; }
+  .about-hero .portrait { max-width: 320px; }
+  .help-list { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 560px) {
+  .about-hero .wrap { padding-top: var(--space-6); }
+  .about-intro, .help, .about-quote { padding-block: var(--space-6); }
+  .about-intro .lead { font-size: 22px; }
+  .help-list li { padding: var(--space-4); }
+}
