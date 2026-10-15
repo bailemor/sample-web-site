@@ -14,4 +14,4 @@ Credits are shown on each photo and on photo-credits.html. Attributions supplied
 | cornwall-fall-* | Cornwall, ON | Ontario by Bike, supplied by Bruce as "Cornwall in Fall.jpg" (1024 x 711 only; used as Our Work banner, may look soft on wide screens) | Credited; licence to be confirmed |
 | kingston-city-hall-sunrise-* | Kingston, ON | Onfokus on iStock (617375808); watermarked preview supplied by Bruce, 1024 x 682 | Bruce to buy the licence if it fits, then swap in the clean file |
 | kingston-downtown-night-* | Kingston, ON | Scott Martin on iStock (2028880696); watermarked preview supplied by Bruce, 1024 x 576 | Bruce to buy the licence if it fits, then swap in the clean file |
-| beamsville-bench-vineyard-* | Beamsville Bench, ON | Supplied by Bruce as "Hidden Bench.jpg" (1595 x 800); source unknown | Need photographer and licence |
+| beamsville-bench-vineyard-* | Beamsville Bench, ON | Supplied by Bruce as "Hidden-Bench-Winery-3.jpeg" (2400 x 1600); file metadata: copyright Steven Elphick 2022 | Need permission (Bruce asking Hidden Bench) |
