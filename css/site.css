@@ -297,3 +297,58 @@ p:last-child { margin-bottom: 0; }
   .founder-cta .wrap { grid-template-columns: minmax(0, 1fr); gap: var(--space-5); }
   .founder-photo { max-width: 320px; }
 }
+
+/* Photo banners: a place photo behind the dark-green hero, with a green wash so white and lime text keep their contrast */
+.photo-hero { position: relative; isolation: isolate; overflow: hidden; }
+.photo-hero .hero-photo { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; }
+.photo-hero::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(43, 71, 45, .95) 0%, rgba(43, 71, 45, .9) 38%, rgba(43, 71, 45, .45) 72%, rgba(43, 71, 45, .2) 100%); }
+.photo-hero .wrap { min-height: clamp(380px, 46vw, 560px); display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
+.hero.photo-hero .wrap { min-height: clamp(460px, 62vw, 720px); }
+.photo-credit { position: absolute; right: 0; bottom: 0; margin: 0; padding: 6px 12px; background: rgba(0, 0, 0, .55); color: var(--white); font-size: 12px; line-height: 1.4; letter-spacing: .04em; }
+
+/* Full-width photo band between sections */
+.photo-band { position: relative; margin: 0; }
+.photo-band img { width: 100%; height: clamp(220px, 34vw, 520px); object-fit: cover; }
+.photo-band figcaption { position: absolute; left: 0; bottom: 0; padding: var(--space-2) var(--space-4); background: var(--surface-brand); color: var(--on-brand); font: italic 400 16px/1.4 var(--font-serif); }
+.photo-band figcaption strong { font-style: normal; color: var(--accent); }
+
+/* Home: Canadian towns photo grid */
+.towns { padding-block: var(--space-8); }
+.towns .section-head { max-width: var(--measure); margin-bottom: var(--space-6); }
+.towns .eyebrow { color: var(--heading); }
+.towns h2 { margin: 0 0 var(--space-3); font: 700 clamp(28px, 3.4vw, 40px)/1.15 var(--font-serif); color: var(--heading); text-wrap: balance; }
+.towns .section-head p { font-size: 18px; line-height: 1.6; margin: 0; }
+.town-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-3); }
+.town-grid li { position: relative; overflow: hidden; background: var(--surface-alt); }
+.town-grid li:first-child { grid-column: span 2; grid-row: span 2; }
+.town-grid img { width: 100%; height: 100%; aspect-ratio: 4 / 3; object-fit: cover; transition: transform .6s ease; }
+.town-grid li:hover img { transform: scale(1.04); }
+.town-grid figure { margin: 0; height: 100%; }
+.town-grid figcaption { position: absolute; left: 0; bottom: 0; padding: var(--space-2) var(--space-3); background: var(--surface-brand); color: var(--on-brand); }
+.town-grid .town { display: block; font: 700 20px/1.2 var(--font-serif); }
+.town-grid .prov { display: block; font-size: 13px; line-height: 1.4; letter-spacing: .08em; text-transform: uppercase; font-weight: 600; color: var(--accent); }
+
+@media (max-width: 860px) {
+  .photo-hero::before { background: linear-gradient(180deg, rgba(43, 71, 45, .82) 0%, rgba(43, 71, 45, .9) 100%); }
+  .town-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  .photo-hero .wrap { min-height: 340px; padding-bottom: var(--space-7); }
+  .hero.photo-hero .wrap { min-height: 460px; }
+  .towns { padding-block: var(--space-6); }
+  .town-grid { grid-template-columns: minmax(0, 1fr); }
+  .town-grid li:first-child { grid-column: auto; grid-row: auto; }
+  .photo-band figcaption { padding: var(--space-1) var(--space-3); font-size: 14px; }
+}
+@media (prefers-reduced-motion: reduce) { .town-grid img { transition: none; } .town-grid li:hover img { transform: none; } }
+.town-grid li:first-child img { aspect-ratio: auto; }
+@media (max-width: 860px) {
+  .town-grid li:first-child { grid-row: auto; }
+  .town-grid li:first-child img { aspect-ratio: 16 / 9; }
+  .town-grid li:last-child { grid-column: span 2; }
+  .town-grid li:last-child img { aspect-ratio: 16 / 7; }
+}
+@media (max-width: 560px) {
+  .town-grid li:last-child { grid-column: auto; }
+  .town-grid li:first-child img, .town-grid li:last-child img { aspect-ratio: 4 / 3; }
+}
