@@ -11,4 +11,4 @@ Credits are shown on each photo and on photo-credits.html. Attributions supplied
 | faro-autumn-* | Faro, YT | Gord McKenna on Flickr, all rights reserved | Permission pending |
 | whitehorse-night-* | Whitehorse, YT | iStock 478492854 (Pi-Lens), watermarked preview | Licence from iStock, then swap in the clean file |
 | whitehorse-river-* | Whitehorse, YT | iStock 471514353 (AscentXmedia), watermarked preview | Licence from iStock, then swap in the clean file |
-| cornwall-fall-* | Cornwall, ON | Supplied by Bruce as "Cornwall in Fall.jpg"; source unknown (1024 x 711 only; used as Our Work banner, may look soft on wide screens) | Need photographer and licence |
+| cornwall-fall-* | Cornwall, ON | Ontario by Bike, supplied by Bruce as "Cornwall in Fall.jpg" (1024 x 711 only; used as Our Work banner, may look soft on wide screens) | Credited; licence to be confirmed |
