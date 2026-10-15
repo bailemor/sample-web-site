@@ -277,3 +277,11 @@ p:last-child { margin-bottom: 0; }
 @media (max-width: 560px) {
   .legal-hero .wrap, .legal { padding-block: var(--space-6); }
 }
+
+/* Home page service boxes: the whole box is the link */
+.service-list li { position: relative; border-bottom: 4px solid transparent; transition: border-color .2s ease; }
+.service-list li:hover, .service-list li:focus-within { border-bottom-color: var(--dark-green); }
+.service-list li a::after { content: ""; position: absolute; inset: 0; }
+.service-list li a:focus-visible { outline: none; }
+.service-list li:focus-within:has(a:focus-visible) { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { .service-list li { transition: none; } }
