@@ -363,3 +363,9 @@ p:last-child { margin-bottom: 0; }
 .credit-list li { padding: var(--space-3) 0; margin: 0; border-bottom: 1px solid var(--rule); }
 .credit-list h2 { margin: 0 0 var(--space-1); font-size: 20px; }
 .credit-list p { margin: 0; }
+
+/* Our Work: one band per service, alternating backgrounds */
+.work-group:nth-of-type(odd) { background: var(--surface); }
+.work-group:nth-of-type(odd) .work-list li { background: var(--surface-alt); }
+.work-group h2 a { color: inherit; text-decoration: none; }
+.work-group h2 a:hover { text-decoration: underline; }
