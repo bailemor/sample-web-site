@@ -352,3 +352,14 @@ p:last-child { margin-bottom: 0; }
   .town-grid li:last-child { grid-column: auto; }
   .town-grid li:first-child img, .town-grid li:last-child img { aspect-ratio: 4 / 3; }
 }
+
+/* Photo credits */
+.photo-credit a { color: inherit; text-decoration: underline; }
+.photo-credit a:focus-visible, .photo-band a:focus-visible { outline: 2px solid var(--focus-ring-on-brand); outline-offset: 2px; }
+.photo-band .credit { display: block; font: 400 12px/1.4 var(--font-sans); font-style: normal; }
+.photo-band .credit a { color: inherit; }
+.grid-credit { margin: var(--space-3) 0 0; font-size: 13px; line-height: 1.5; }
+.credit-list { list-style: none; padding: 0 !important; margin: 0 0 var(--space-5) !important; border-top: 1px solid var(--rule); }
+.credit-list li { padding: var(--space-3) 0; margin: 0; border-bottom: 1px solid var(--rule); }
+.credit-list h2 { margin: 0 0 var(--space-1); font-size: 20px; }
+.credit-list p { margin: 0; }
