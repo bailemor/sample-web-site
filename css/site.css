@@ -378,30 +378,3 @@ p:last-child { margin-bottom: 0; }
 .work-star dt { margin-top: var(--space-3); font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--heading); }
 .work-star dt:first-child { margin-top: 0; }
 .work-star dd { margin: var(--space-1) 0 0; font-size: 17px; line-height: 1.55; }
-
-/* Case studies */
-.case-study { padding-block: var(--space-8); }
-.case-study:nth-of-type(even) { background: var(--surface-alt); }
-.case-head { max-width: var(--measure); margin-bottom: var(--space-5); }
-.case-client { margin: 0 0 var(--space-2); font-size: 13px; line-height: 1.4; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--heading); }
-.case-head h2 { margin: 0 0 var(--space-3); font: 700 clamp(26px, 3vw, 34px)/1.2 var(--font-serif); color: var(--heading); }
-.case-meta { margin: 0; font-size: 15px; line-height: 1.4; }
-.case-study .key-message { max-width: var(--measure); margin: 0 0 var(--space-6); padding-left: var(--space-4); border-left: 4px solid var(--accent); font: 700 clamp(20px, 2.2vw, 24px)/1.4 var(--font-serif); color: var(--heading); }
-.case-body { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 40%); column-gap: var(--space-6); align-items: start; }
-.case-section { grid-column: 1; max-width: var(--measure); margin-bottom: var(--space-5); }
-.case-section h3 { margin: 0 0 var(--space-3); font: 700 22px/1.25 var(--font-serif); color: var(--heading); }
-.case-section p, .case-section li { font-size: 17px; line-height: 1.55; }
-.case-section p { margin: 0 0 var(--space-3); }
-.case-section ul { margin: 0 0 var(--space-3); padding-left: var(--space-5); }
-.case-section li { margin-bottom: var(--space-2); }
-.case-photo { grid-column: 2; grid-row: 1 / span 2; margin: 0; position: sticky; top: var(--space-5); }
-.case-photo img { display: block; width: 100%; height: auto; }
-.case-photo figcaption { margin-top: var(--space-2); font-size: 13px; line-height: 1.5; }
-.case-result { background: var(--surface-alt); padding: var(--space-5); border-left: 4px solid var(--accent); margin-bottom: 0; }
-.case-result p:last-child { margin-bottom: 0; }
-@media (max-width: 860px) {
-  .case-study { padding-block: var(--space-6); }
-  .case-body { grid-template-columns: minmax(0, 1fr); }
-  .case-photo { grid-column: 1; grid-row: auto; position: static; margin-bottom: var(--space-5); }
-  .case-result { padding: var(--space-4); }
-}
