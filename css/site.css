@@ -371,3 +371,10 @@ p:last-child { margin-bottom: 0; }
 .work-group h2 a:hover { text-decoration: underline; }
 
 /* Our Work: place photo inside a service section */
+
+/* Representative work: challenge, approach, result */
+.work-list .work-meta { margin: calc(-1 * var(--space-2)) 0 var(--space-3); font-size: 15px; line-height: 1.4; }
+.work-star { margin: 0; }
+.work-star dt { margin-top: var(--space-3); font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--heading); }
+.work-star dt:first-child { margin-top: 0; }
+.work-star dd { margin: var(--space-1) 0 0; font-size: 17px; line-height: 1.55; }
