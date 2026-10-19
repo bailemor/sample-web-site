@@ -4,16 +4,25 @@ Credits are shown on each photo and on photo-credits.html. Attributions supplied
 
 | File | Place | Credit and licence | Status |
 | --- | --- | --- | --- |
-| st-johns-harbour-* | St. John's, NL | Canadian-Nature-Visions on Pixabay, Pixabay Content License (no credit required; credited anyway), https://pixabay.com/photos/st-johns-newfoundland-canada-city-6937352/ | Credited |
-| cold-lake-kinosoo-beach-* | Cold Lake, AB | Wolfmum (own work), CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=78832188 | Credited |
-| westlock-grain-elevator-* | Westlock, AB | Wilson Hui from Calgary, Canada, CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=74731806 | Credited |
-| jordan-village-* | Jordan, ON | Laslovarga (own work), CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=62189305 | Credited |
-| faro-autumn-* | Faro, YT | Gord McKenna on Flickr, all rights reserved | Permission pending |
-| whitehorse-night-* | Whitehorse, YT | iStock 478492854 (Pi-Lens), watermarked preview | Licence from iStock, then swap in the clean file |
-| whitehorse-river-* | Whitehorse, YT | iStock 471514353 (AscentXmedia), watermarked preview | Licence from iStock, then swap in the clean file |
+| saint-john-harbour-bridge-* | Saint John, NB | diearle on Pixabay, "Saint John Water Harbour", Pixabay Content License, https://pixabay.com/photos/saint-john-3556952/ | Credited |
+| chatham-downtown-river-* | Chatham, ON | Supplied by Bruce 2026-10-19 (client photos) as "Chatham_ON_1.jpg" (2590 x 1726); no photographer in metadata | Source and licence to confirm |
+| mississippi-mills-aerial-* | Mississippi Mills, ON | Supplied by Bruce 2026-10-19 (client photos) as "mississippi-mills-ontario_097-1170x447.jpg" (1170 x 447 only, may look soft on wide screens) | Source and licence to confirm |
+| london-downtown-panorama-* | London, ON | Supplied by Bruce 2026-10-19 (client photos) as "London1.jpg" (1920 x 737); metadata: Camera+ app, 2017 | Source and licence to confirm |
+| fort-frances-post-office-* | Fort Frances, ON | Supplied by Bruce 2026-10-19 (client photos) as "Post_Office_Fort_Frances_Ontario_29036257497.jpg"; filename suggests a Flickr/Wikimedia upload, not verified | Source and licence to confirm |
+| waterloo-king-street-ion-* | Waterloo, ON | Supplied by Bruce 2026-10-19 (client photos) as "Waterloo1.webp" (1920 x 1080), cropped to remove a KPMG sign at top left | Source and licence to confirm |
+| uptown-waterloo-king-street-* | Waterloo, ON | Supplied by Bruce 2026-10-19 (client photos) as "Uptown-Waterloo-crowds-walking-and-cars-on-street-scaled-1.jpg" | Source and licence to confirm |
+| guelph-downtown-basilica-* | Guelph, ON | Supplied by Bruce 2026-10-19 (client photos) as "Guelphdowntownpatio.webp" | Source and licence to confirm |
+| north-bay-waterfront-* | North Bay, ON | Supplied by Bruce 2026-10-19 (client photos) as "North Bay 1.jpg" (1920 x 640) | Source and licence to confirm |
+| canso-harbour-* | Canso, NS | Supplied by Bruce 2026-10-19 (client photos) as "Canso11.jpg" (1600 x 1200, taken 2007) | Source and licence to confirm |
+| iroquois-falls-lumberjack-* | Iroquois Falls, ON | Supplied by Bruce 2026-10-19 (client photos) as "2024-09-12-lumberjack-statue-iroquois-falls.jpg" (1136 x 938) | Source and licence to confirm |
 | cornwall-fall-* | Cornwall, ON | Ontario by Bike, supplied by Bruce as "Cornwall in Fall.jpg" (1024 x 711 only; mirrored left-to-right at Bruce's request; used as Our Work banner, may look soft on wide screens) | Credited; licence to be confirmed |
-| kingston-city-hall-sunrise-* | Kingston, ON | Onfokus on iStock (617375808); watermarked preview supplied by Bruce, 1024 x 682 | Bruce to buy the licence if it fits, then swap in the clean file |
-| kingston-downtown-night-* | Kingston, ON | Scott Martin on iStock (2028880696); watermarked preview supplied by Bruce, 1024 x 576 | Bruce to buy the licence if it fits, then swap in the clean file |
 | beamsville-bench-vineyard-* | Beamsville Bench, ON | Supplied by Bruce as "Hidden-Bench-Winery-3.jpeg" (2400 x 1600); file metadata: copyright Steven Elphick 2022 | Need permission (Bruce asking Hidden Bench) |
-| cave-spring-barn-vineyard-* | Niagara Escarpment, ON | Supplied by Bruce as "LEAD-IMAGE_Cave-Spring-Barn-Vineyard-Exterior-2-scaled.jpg" (2560 x 1440); no photographer in file metadata; likely from Cave Spring's website | Need photographer and permission |
-| sarnia-blue-water-bridge-* | Sarnia, ON | U.S. Army Corps of Engineers Detroit District, "000_0564", CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=103786243 | Credited (Operational Improvement page only; Bruce does not want it on the home page) |
+
+## Not used from the 2026-10-19 batch
+
+- Gateway-to-the-North (North Bay): the mileage sign lists the town of Swastika, which reads badly out of context.
+- KD-North-Bay-at-dusk-marina: metadata says copyright KathrynAnywhere.
+- London2: metadata says Scott Webb Photography.
+- London3: busy street with store advertising.
+- statue-bucheron-iroquois-falls-nord-ontario: second, weaker shot of the same statue.
+- mississippi-mills-ontario.jpg (466 x 107) and Waterloo3.jpg (678 x 452, watermarked): too small.
