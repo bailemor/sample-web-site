@@ -260,7 +260,7 @@ p:last-child { margin-bottom: 0; }
 .photo-band figcaption { position: absolute; left: 0; bottom: 0; padding: var(--space-2) var(--space-4); background: var(--surface-brand); color: var(--on-brand); font: italic 400 16px/1.4 var(--font-serif); }
 .photo-band figcaption strong { font-style: normal; color: var(--accent); }
 
-/* Home: Canadian towns photo grid */
+/* Canadian towns photo grid (About page) */
 .towns { padding-block: var(--space-8); }
 .towns .section-head { max-width: var(--measure); margin-bottom: var(--space-6); }
 .towns .eyebrow { color: var(--heading); }
