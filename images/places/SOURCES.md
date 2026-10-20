@@ -5,7 +5,6 @@ Credits are shown on each photo and on photo-credits.html. Attributions supplied
 | File | Place | Credit and licence | Status |
 | --- | --- | --- | --- |
 | saint-john-harbour-bridge-* | Saint John, NB | diearle on Pixabay, "Saint John Water Harbour", Pixabay Content License, https://pixabay.com/photos/saint-john-3556952/ | Credited |
-| chatham-downtown-river-* | Chatham, ON | Supplied by Bruce 2026-10-19 (client photos) as "Chatham_ON_1.jpg" (2590 x 1726); no photographer in metadata | Source and licence to confirm |
 | mississippi-mills-aerial-* | Mississippi Mills, ON | Supplied by Bruce 2026-10-19 (client photos) as "mississippi-mills-ontario_097-1170x447.jpg" (1170 x 447 only, may look soft on wide screens) | Source and licence to confirm |
 | london-downtown-panorama-* | London, ON | Supplied by Bruce 2026-10-19 (client photos) as "London1.jpg" (1920 x 737); metadata: Camera+ app, 2017 | Source and licence to confirm |
 | fort-frances-post-office-* | Fort Frances, ON | Supplied by Bruce 2026-10-19 (client photos) as "Post_Office_Fort_Frances_Ontario_29036257497.jpg"; filename suggests a Flickr/Wikimedia upload, not verified | Source and licence to confirm |
