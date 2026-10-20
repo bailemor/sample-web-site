@@ -2,7 +2,7 @@
 @font-face { font-family: "Source Sans 3"; src: url("../fonts/SourceSans3-latin.woff2") format("woff2"); font-weight: 200 900; font-style: normal; font-display: swap; }
 @font-face { font-family: "Source Sans 3"; src: url("../fonts/SourceSans3-Italic-latin.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
 :root {
-  --dark-green: #2b472d; --lime-green: #d0d529; --mauve: #beb5b6; --light-grey: #f1f1f2; --white: #ffffff; --black: #000000;
+  --dark-green: #31462f; --lime-green: #d1d863; --sage: #aeb7a6; --slate: #3d4d5e; --mauve: #beb5b6; --light-grey: #f1f1f2; --white: #ffffff; --black: #000000;
   --surface: var(--white); --surface-alt: var(--light-grey); --surface-brand: var(--dark-green);
   --ink: var(--black); --heading: var(--dark-green); --on-brand: var(--white);
   --accent: var(--lime-green); --on-accent: var(--dark-green); --rule: var(--mauve);
@@ -52,31 +52,6 @@ p:last-child { margin-bottom: 0; }
 /* The slanted lime bar is the acute accent from the logo's Ó. */
 .accent-mark { display: block; width: 1.3em; height: .32em; margin: 0 0 .28em; background: var(--accent); clip-path: polygon(0 34%, 100% 0, 100% 66%, 0 100%); font-size: clamp(40px, 7vw, 76px); }
 
-/* Story */
-.story { padding-block: var(--space-8); }
-.story .wrap { display: grid; grid-template-columns: minmax(0, 300px) minmax(0, var(--measure)); gap: var(--space-7); align-items: start; }
-.definition { background: var(--surface-alt); padding: var(--space-4); position: sticky; top: var(--space-4); }
-.definition .term { margin: 0; font: 700 32px/1.1 var(--font-serif); color: var(--heading); }
-.definition .meta { margin: var(--space-2) 0 var(--space-3); font-size: 13px; line-height: 1.4; letter-spacing: .08em; text-transform: uppercase; font-weight: 600; color: var(--ink); }
-.definition .gloss { margin: 0; padding-top: var(--space-3); border-top: 1px solid var(--rule); font: italic 400 19px/1.4 var(--font-serif); color: var(--heading); }
-.story-text { font-size: 18px; line-height: 1.6; }
-.story-text p { margin-bottom: var(--space-4); }
-.story-text .lead { font: 400 23px/1.45 var(--font-serif); color: var(--heading); }
-
-/* Belief */
-.belief { background: var(--surface-alt); padding-block: var(--space-8); }
-.belief blockquote { margin: 0; max-width: 860px; }
-.belief blockquote p { font: italic 400 clamp(22px, 2.6vw, 30px)/1.4 var(--font-serif); color: var(--heading); margin-bottom: var(--space-4); }
-.belief blockquote p.closer { font-style: normal; font-weight: 700; }
-
-/* Services */
-.services { padding-block: var(--space-8); }
-.services .wrap { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: var(--space-7); align-items: start; }
-.services .intro { font: 700 23px/1.35 var(--font-serif); color: var(--heading); margin: 0; }
-.service-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-3); }
-.service-list li { background: var(--surface-alt); padding: var(--space-4); font-weight: 600; font-size: 18px; line-height: 1.3; color: var(--heading); min-height: 112px; display: flex; flex-direction: column; justify-content: space-between; gap: var(--space-3); }
-.service-list li::before { content: ""; width: 40px; height: 10px; background: var(--accent); clip-path: polygon(0 34%, 100% 0, 100% 66%, 0 100%); }
-
 /* Call to action */
 .cta { background: var(--surface-brand); color: var(--on-brand); padding-block: var(--space-8); }
 .cta .wrap { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: var(--space-5); }
@@ -103,17 +78,9 @@ p:last-child { margin-bottom: 0; }
   .site-nav li a:hover { border-bottom-color: var(--dark-green); }
   .site-nav a.nav-cta { margin-top: var(--space-3); text-align: center; }
 }
-@media (max-width: 860px) {
-  .story .wrap, .services .wrap { grid-template-columns: minmax(0, 1fr); gap: var(--space-5); }
-  .definition { position: static; }
-}
 @media (max-width: 560px) {
   .wrap { padding-inline: var(--space-3); }
-  .hero .wrap, .story, .belief, .services, .cta { padding-block: var(--space-6); }
-  .service-list { grid-template-columns: minmax(0, 1fr); }
-  .service-list li { min-height: 0; }
-  .story-text { font-size: 17px; }
-  .story-text .lead { font-size: 20px; }
+  .hero .wrap, .cta { padding-block: var(--space-6); }
 }
 @media (prefers-reduced-motion: reduce) { .btn .arrow { transition: none; } }
 
@@ -123,6 +90,7 @@ p:last-child { margin-bottom: 0; }
 /* Photo placeholders: swap each for an <img> when the photographer's files arrive */
 .photo-slot { background: var(--surface-alt); border: 2px dashed var(--rule); display: flex; align-items: center; justify-content: center; text-align: center; padding: var(--space-4); color: var(--heading); font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
 .photo-slot img { width: 100%; height: 100%; object-fit: cover; }
+.photo-slot:has(img) { padding: 0; }
 
 /* About page */
 .about-hero { background: var(--surface-brand); color: var(--on-brand); }
@@ -248,9 +216,9 @@ p:last-child { margin-bottom: 0; }
 @media (max-width: 860px) { .framework-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 420px) { .framework-list { grid-template-columns: minmax(0, 1fr); } }
 
-/* Service names on the home and About pages link to their service pages */
-.service-list a, .help-list h3 a { color: inherit; text-decoration: none; }
-.service-list a:hover, .help-list h3 a:hover { text-decoration: underline; }
+/* Service names on the About page link to their service pages */
+.help-list h3 a { color: inherit; text-decoration: none; }
+.help-list h3 a:hover { text-decoration: underline; }
 
 /* Footer legal links */
 .footer-meta { display: flex; flex-direction: column; align-items: flex-end; gap: var(--space-3); }
@@ -278,30 +246,10 @@ p:last-child { margin-bottom: 0; }
   .legal-hero .wrap, .legal { padding-block: var(--space-6); }
 }
 
-/* Home page service boxes: the whole box is the link */
-.service-list li { position: relative; border-bottom: 4px solid transparent; transition: border-color .2s ease; }
-.service-list li:hover, .service-list li:focus-within { border-bottom-color: var(--dark-green); }
-.service-list li a::after { content: ""; position: absolute; inset: 0; }
-.service-list li a:focus-visible { outline: none; }
-.service-list li:focus-within:has(a:focus-visible) { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
-@media (prefers-reduced-motion: reduce) { .service-list li { transition: none; } }
-
-/* Home page founder band: Bruce's photo beside the closing call to action */
-.founder-cta .wrap { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: var(--space-7); align-items: center; }
-.founder-photo { aspect-ratio: 4 / 5; border: 0; background: var(--light-grey); }
-.founder-text { display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-5); }
-.founder-text h2 { max-width: 16ch; }
-.founder-name { margin: 0; padding-left: var(--space-3); border-left: 4px solid var(--accent); font: 700 22px/1.3 var(--font-serif); }
-.founder-name span { font: 400 17px/1.5 var(--font-sans); }
-@media (max-width: 860px) {
-  .founder-cta .wrap { grid-template-columns: minmax(0, 1fr); gap: var(--space-5); }
-  .founder-photo { max-width: 320px; }
-}
-
 /* Photo banners: a place photo behind the dark-green hero, with a green wash so white and lime text keep their contrast */
 .photo-hero { position: relative; isolation: isolate; overflow: hidden; }
 .photo-hero .hero-photo { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; }
-.photo-hero::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(43, 71, 45, .95) 0%, rgba(43, 71, 45, .9) 38%, rgba(43, 71, 45, .45) 72%, rgba(43, 71, 45, .2) 100%); }
+.photo-hero::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(49, 70, 47, .95) 0%, rgba(49, 70, 47, .9) 38%, rgba(49, 70, 47, .45) 72%, rgba(49, 70, 47, .2) 100%); }
 .photo-hero .wrap { min-height: clamp(380px, 46vw, 560px); display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
 .hero.photo-hero .wrap { min-height: clamp(460px, 62vw, 720px); }
 .photo-credit { position: absolute; right: 0; bottom: 0; margin: 0; padding: 6px 12px; background: rgba(0, 0, 0, .55); color: var(--white); font-size: 12px; line-height: 1.4; letter-spacing: .04em; }
@@ -312,7 +260,7 @@ p:last-child { margin-bottom: 0; }
 .photo-band figcaption { position: absolute; left: 0; bottom: 0; padding: var(--space-2) var(--space-4); background: var(--surface-brand); color: var(--on-brand); font: italic 400 16px/1.4 var(--font-serif); }
 .photo-band figcaption strong { font-style: normal; color: var(--accent); }
 
-/* Home: Canadian towns photo grid */
+/* Canadian towns photo grid (About page) */
 .towns { padding-block: var(--space-8); }
 .towns .section-head { max-width: var(--measure); margin-bottom: var(--space-6); }
 .towns .eyebrow { color: var(--heading); }
@@ -329,7 +277,7 @@ p:last-child { margin-bottom: 0; }
 .town-grid .prov { display: block; font-size: 13px; line-height: 1.4; letter-spacing: .08em; text-transform: uppercase; font-weight: 600; color: var(--accent); }
 
 @media (max-width: 860px) {
-  .photo-hero::before { background: linear-gradient(180deg, rgba(43, 71, 45, .82) 0%, rgba(43, 71, 45, .9) 100%); }
+  .photo-hero::before { background: linear-gradient(180deg, rgba(49, 70, 47, .82) 0%, rgba(49, 70, 47, .9) 100%); }
   .town-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 560px) {
@@ -364,17 +312,151 @@ p:last-child { margin-bottom: 0; }
 .credit-list h2 { margin: 0 0 var(--space-1); font-size: 20px; }
 .credit-list p { margin: 0; }
 
-/* Our Work: one band per service, alternating backgrounds */
-.work-group:nth-of-type(odd) { background: var(--surface); }
-.work-group:nth-of-type(odd) .work-list li { background: var(--surface-alt); }
-.work-group h2 a { color: inherit; text-decoration: none; }
-.work-group h2 a:hover { text-decoration: underline; }
-
-/* Our Work: place photo inside a service section */
-
 /* Representative work: challenge, approach, result */
 .work-list .work-meta { margin: calc(-1 * var(--space-2)) 0 var(--space-3); font-size: 15px; line-height: 1.4; }
 .work-star { margin: 0; }
 .work-star dt { margin-top: var(--space-3); font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--heading); }
 .work-star dt:first-child { margin-top: 0; }
 .work-star dd { margin: var(--space-1) 0 0; font-size: 17px; line-height: 1.55; }
+
+/* Header: lime strip across the top of every page */
+.site-header { border-top: 10px solid var(--accent); }
+
+/* Home landing page: light hero with Bruce's portrait, a slanted slate story band, practice list and a dark-green closing band */
+.lp-hero { background: var(--surface-alt); overflow: hidden; }
+.lp-hero .wrap { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--space-7); align-items: center; padding-block: var(--space-7) var(--space-8); }
+.lp-hero h1 { margin: 0 0 var(--space-4); font: 700 clamp(40px, 6vw, 68px)/1.05 var(--font-serif); color: var(--heading); max-width: 12ch; text-wrap: balance; }
+.lp-hero .accent-mark { font-size: clamp(40px, 6vw, 68px); }
+.lp-intro { max-width: 34em; margin: 0 0 var(--space-5); font-size: 20px; line-height: 1.5; }
+.lp-actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-4) var(--space-6); }
+.lp-more { display: inline-flex; align-items: center; gap: var(--space-2); font-weight: 600; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; text-decoration: none; color: var(--heading); }
+.lp-more .arrow { width: 0; height: 0; border-left: 8px solid var(--dark-green); border-block: 6px solid transparent; transition: transform .2s ease; }
+.lp-more:hover { text-decoration: underline; }
+.lp-more:hover .arrow { transform: translateX(3px); }
+.lp-btn { display: inline-flex; align-items: center; min-height: 48px; padding: 0 var(--space-5); background: var(--dark-green); color: var(--accent); border: 2px solid var(--dark-green); font-weight: 600; font-size: 15px; letter-spacing: .12em; text-transform: uppercase; text-decoration: none; }
+.lp-btn:hover { background: var(--black); border-color: var(--black); color: var(--white); }
+.lp-btn:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 3px; }
+/* The two slanted bars behind the portrait echo the acute accent in the logo */
+.lp-portrait { position: relative; isolation: isolate; margin: 0 var(--space-4) 0 var(--space-6); max-width: 400px; justify-self: end; width: 100%; }
+.lp-portrait::before, .lp-portrait::after { content: ""; position: absolute; z-index: -1; }
+.lp-portrait::before { top: 6%; right: -18%; width: 80%; height: 30%; background: var(--accent); clip-path: polygon(0 18%, 100% 0, 100% 82%, 0 100%); }
+.lp-portrait::after { bottom: 22%; left: -22%; width: 70%; height: 26%; background: var(--dark-green); clip-path: polygon(0 18%, 100% 0, 100% 82%, 0 100%); }
+.lp-portrait img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
+.lp-portrait figcaption { margin-top: var(--space-3); padding-left: var(--space-3); border-left: 4px solid var(--accent); font-size: 15px; line-height: 1.4; }
+.lp-portrait figcaption strong { display: block; font: 700 19px/1.3 var(--font-serif); color: var(--heading); }
+
+.lp-story { position: relative; z-index: 1; margin-top: calc(-1 * var(--space-7)); background: var(--slate); color: var(--white); clip-path: polygon(0 var(--space-8), 100% 0, 100% calc(100% - var(--space-8)), 0 100%); padding-block: calc(var(--space-8) + var(--space-6)); }
+.lp-lead { max-width: 30em; margin: 0 0 var(--space-6); font: 400 clamp(22px, 2.6vw, 30px)/1.4 var(--font-serif); color: var(--accent); text-wrap: pretty; }
+.lp-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-6); max-width: 1000px; font-size: 17px; line-height: 1.6; }
+.lp-columns p { margin: 0; }
+
+.lp-services { padding-block: var(--space-7) var(--space-8); margin-top: calc(-1 * var(--space-6)); }
+.lp-services h2 { margin: 0 0 var(--space-6); text-align: center; font: 700 clamp(26px, 3vw, 36px)/1.2 var(--font-serif); color: var(--heading); }
+.lp-service-list { list-style: none; margin: 0 auto; padding: 0; max-width: 960px; border-top: 1px solid var(--rule); }
+.lp-service-list li { position: relative; display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: var(--space-5); align-items: baseline; padding-block: var(--space-4); border-bottom: 1px solid var(--rule); }
+.lp-service-list a { font-weight: 600; font-size: 17px; letter-spacing: .1em; text-transform: uppercase; text-decoration: none; color: var(--heading); }
+.lp-service-list a::after { content: ""; position: absolute; inset: 0; }
+.lp-service-list p { margin: 0; font-size: 18px; line-height: 1.5; }
+.lp-service-list li:hover { background: var(--surface-alt); }
+.lp-service-list li:hover a { text-decoration: underline; }
+.lp-service-list a:focus-visible { outline: none; }
+.lp-service-list li:has(a:focus-visible) { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+
+.towns { background: var(--surface-alt); }
+
+.lp-belief { background: var(--surface-brand); color: var(--on-brand); padding-block: var(--space-8); text-align: center; }
+.lp-belief blockquote { margin: 0 auto var(--space-6); max-width: 860px; }
+.lp-belief blockquote p { margin: 0 0 var(--space-4); font: 400 clamp(22px, 2.6vw, 30px)/1.4 var(--font-serif); color: var(--accent); text-wrap: pretty; }
+.lp-belief blockquote p.closer { font-weight: 700; color: var(--white); }
+
+@media (max-width: 860px) {
+  .lp-hero .wrap { grid-template-columns: minmax(0, 1fr); gap: var(--space-6); padding-block: var(--space-6) var(--space-8); }
+  .lp-portrait { justify-self: center; max-width: 340px; margin-inline: var(--space-6); }
+  .lp-story { clip-path: polygon(0 var(--space-6), 100% 0, 100% calc(100% - var(--space-6)), 0 100%); padding-block: calc(var(--space-6) + var(--space-6)); }
+  .lp-columns { grid-template-columns: minmax(0, 1fr); gap: var(--space-4); }
+  .lp-service-list li { grid-template-columns: minmax(0, 1fr); gap: var(--space-2); }
+}
+@media (max-width: 560px) {
+  .lp-intro { font-size: 18px; }
+  .lp-portrait { margin-inline: var(--space-5); }
+  .lp-services, .lp-belief { padding-block: var(--space-6); }
+  .lp-services { padding-top: var(--space-7); }
+}
+@media (prefers-reduced-motion: reduce) { .lp-more .arrow { transition: none; } }
+
+/* Case studies */
+.cs-contents { padding-block: var(--space-7) var(--space-6); scroll-margin-top: var(--space-4); }
+.cs-index { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-4); }
+.cs-index a { display: flex; flex-direction: column; gap: var(--space-2); height: 100%; padding: var(--space-5); background: var(--surface-alt); color: var(--ink); text-decoration: none; border-bottom: 4px solid transparent; transition: border-color .2s ease; }
+.cs-index a:hover, .cs-index a:focus-visible { border-bottom-color: var(--dark-green); }
+.cs-index strong { font: 700 22px/1.25 var(--font-serif); color: var(--heading); }
+.cs-index a:hover strong { text-decoration: underline; }
+.cs-index-tag { font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--heading); }
+.cs { padding-block: var(--space-8) var(--space-7); border-top: 1px solid var(--rule); scroll-margin-top: var(--space-4); }
+.cs-head { margin-bottom: var(--space-6); }
+.cs-kicker { display: inline-block; margin: 0 0 var(--space-4); font-weight: 600; font-size: 13px; line-height: 1.4; letter-spacing: .1em; text-transform: uppercase; color: var(--heading); padding-bottom: var(--space-2); border-bottom: 3px solid var(--accent); }
+.cs-head h2 { margin: 0 0 var(--space-5); max-width: 32ch; font: 700 clamp(30px, 4vw, 44px)/1.15 var(--font-serif); color: var(--heading); text-wrap: balance; }
+.cs-snapshot { margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+.cs-snapshot div { background: var(--surface-alt); padding: var(--space-3) var(--space-4); }
+.cs-snapshot dt { font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--heading); }
+.cs-snapshot dd { margin: var(--space-1) 0 0; font-size: 16px; line-height: 1.45; }
+.cs-body { max-width: var(--measure); }
+.cs-body p, .cs-body li { font-size: 18px; line-height: 1.6; }
+.cs-body h3 { margin: var(--space-6) 0 var(--space-3); font: 700 clamp(24px, 2.6vw, 30px)/1.2 var(--font-serif); color: var(--heading); }
+.cs-body h3:first-child { margin-top: 0; }
+.cs-body h4 { margin: var(--space-5) 0 var(--space-2); font: 700 20px/1.3 var(--font-serif); color: var(--heading); }
+.cs-lead { font: 400 21px/1.5 var(--font-serif) !important; color: var(--heading); }
+.cs-phases { list-style: none; counter-reset: phase; margin: var(--space-4) 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-1); }
+.cs-phases-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.cs-phases li { counter-increment: phase; background: var(--surface-brand); color: var(--on-brand); padding: var(--space-3); font-size: 15px !important; line-height: 1.35 !important; clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 0 100%); padding-right: var(--space-4); }
+.cs-phases strong { display: block; margin-bottom: var(--space-1); font: 700 18px/1.2 var(--font-serif); color: var(--accent); }
+.cs-phases strong::before { content: counter(phase) ". "; }
+.cs-steps { margin: var(--space-4) 0 0; padding-left: var(--space-5); }
+.cs-steps li { margin-bottom: var(--space-3); padding-left: var(--space-1); }
+.cs-steps li::marker { font-weight: 700; color: var(--heading); }
+.cs-steps strong, .cs-list strong { color: var(--heading); }
+.cs-list { margin: 0 0 var(--space-4); padding-left: var(--space-5); }
+.cs-list li { margin-bottom: var(--space-2); }
+.cs-stats { margin: var(--space-4) 0 var(--space-5); display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: var(--space-3); }
+.cs-stats div { background: var(--surface-brand); color: var(--on-brand); padding: var(--space-4); }
+.cs-stats dt { font: 700 30px/1.15 var(--font-serif); color: var(--accent); }
+.cs-stats dd { margin: var(--space-2) 0 0; font-size: 16px; line-height: 1.45; }
+.cs-flow { margin: var(--space-6) 0; }
+.cs-flow figcaption { margin-bottom: var(--space-3); font: 700 20px/1.3 var(--font-serif); color: var(--heading); }
+.cs-flow-grid { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr); align-items: stretch; gap: var(--space-2); }
+.cs-flow-box { background: var(--surface-alt); padding: var(--space-3); border-top: 4px solid var(--sage); }
+.cs-flow-box ul { margin: 0; padding-left: var(--space-4); }
+.cs-flow-box li, .cs-flow-box p { font-size: 15px !important; line-height: 1.4 !important; margin: 0; }
+.cs-flow-label { font-weight: 700; color: var(--heading); margin-bottom: var(--space-2) !important; }
+.cs-flow-core { background: var(--surface-brand); color: var(--on-brand); border-top-color: var(--accent); display: flex; flex-direction: column; justify-content: center; }
+.cs-flow-core .cs-flow-label { color: var(--accent); font: 700 18px/1.25 var(--font-serif); }
+.cs-flow-arrow { align-self: center; font-size: 24px; color: var(--heading); }
+.cs-lessons { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-3); }
+.cs-lessons li { padding: var(--space-4); background: var(--surface-alt); border-left: 4px solid var(--accent); font-size: 17px !important; }
+.cs-lessons strong { display: block; margin-bottom: var(--space-1); font: 700 19px/1.3 var(--font-serif); color: var(--heading); }
+.cs-cta { margin-top: var(--space-6); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-4); padding: var(--space-5); background: var(--slate); color: var(--on-brand); }
+.cs-cta > div { max-width: 52ch; }
+.cs-cta p { margin: 0; font-size: 17px; line-height: 1.5; }
+.cs-cta .cs-cta-title { margin-bottom: var(--space-1); font: 700 24px/1.25 var(--font-serif); color: var(--accent); }
+.cs-cta .btn:focus-visible { outline-color: var(--focus-ring-on-brand); }
+.cs-top { margin: var(--space-4) 0 0; font-size: 15px; font-weight: 600; }
+@media (max-width: 860px) {
+  .cs-index { grid-template-columns: minmax(0, 1fr); }
+  .cs-phases, .cs-phases-5 { grid-template-columns: minmax(0, 1fr); }
+  .cs-phases li { clip-path: none; border-left: 4px solid var(--accent); }
+  .cs-flow-grid { grid-template-columns: minmax(0, 1fr); }
+  .cs-flow-arrow { transform: rotate(90deg); justify-self: center; }
+}
+@media (max-width: 640px) {
+  .cs-contents { padding-block: var(--space-6) var(--space-5); }
+  .cs { padding-block: var(--space-6); }
+  .cs-index a, .cs-cta { padding: var(--space-4); }
+  .cs-body p, .cs-body li { font-size: 17px; }
+}
+.cs-photo { position: relative; margin: 0 0 var(--space-6); }
+.cs-photo img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 55%; }
+.cs-photo figcaption { position: absolute; left: 0; bottom: 0; padding: var(--space-2) var(--space-4); background: var(--surface-brand); color: var(--on-brand); font: italic 400 16px/1.4 var(--font-serif); }
+.cs-photo figcaption strong { font-style: normal; color: var(--accent); }
+.cs-photo .credit { display: block; font: 400 12px/1.4 var(--font-sans); }
+.cs-photo .credit a { color: inherit; }
+@media (max-width: 640px) { .cs-photo img { aspect-ratio: 4 / 3; } .cs-photo figcaption { padding: var(--space-1) var(--space-3); font-size: 14px; } }
