@@ -453,3 +453,10 @@ p:last-child { margin-bottom: 0; }
   .cs-index a, .cs-cta { padding: var(--space-4); }
   .cs-body p, .cs-body li { font-size: 17px; }
 }
+.cs-photo { position: relative; margin: 0 0 var(--space-6); }
+.cs-photo img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 55%; }
+.cs-photo figcaption { position: absolute; left: 0; bottom: 0; padding: var(--space-2) var(--space-4); background: var(--surface-brand); color: var(--on-brand); font: italic 400 16px/1.4 var(--font-serif); }
+.cs-photo figcaption strong { font-style: normal; color: var(--accent); }
+.cs-photo .credit { display: block; font: 400 12px/1.4 var(--font-sans); }
+.cs-photo .credit a { color: inherit; }
+@media (max-width: 640px) { .cs-photo img { aspect-ratio: 4 / 3; } .cs-photo figcaption { padding: var(--space-1) var(--space-3); font-size: 14px; } }

@@ -6,6 +6,7 @@ Credits are shown on each photo and on photo-credits.html. Attributions supplied
 | --- | --- | --- | --- |
 | saint-john-harbour-bridge-* | Saint John, NB | diearle on Pixabay, "Saint John Water Harbour", Pixabay Content License, https://pixabay.com/photos/saint-john-3556952/ | Credited |
 | saanich-view-* | Saanich, BC | Supplied by Bruce 2026-10-20 as "Saanich.jpg" (1280 x 853, may look soft on wide screens) | Source and licence to confirm |
+| almonte-aerial-* | Almonte (Mississippi Mills), ON | Supplied by Bruce 2026-10-20 as "Almonte2.jpg" (1996 x 1330); no EXIF author or copyright | Source and licence to confirm |
 | london-downtown-panorama-* | London, ON | Supplied by Bruce 2026-10-19 (client photos) as "London1.jpg" (1920 x 737); metadata: Camera+ app, 2017 | Source and licence to confirm |
 | fort-frances-post-office-* | Fort Frances, ON | Supplied by Bruce 2026-10-19 (client photos) as "Post_Office_Fort_Frances_Ontario_29036257497.jpg"; filename suggests a Flickr/Wikimedia upload, not verified | Source and licence to confirm |
 | brentwood-bay-aerial-* | Brentwood Bay, BC | Andrea.giese on Wikimedia Commons, CC BY-SA 4.0 (licence confirmed by Bruce from the Commons page, 2026-10-20), https://commons.wikimedia.org/wiki/File:BrentwoodBay.jpg; resized only | Credited |
