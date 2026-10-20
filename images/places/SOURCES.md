@@ -9,7 +9,7 @@ Credits are shown on each photo and on photo-credits.html. Attributions supplied
 | mississippi-mills-aerial-* | Mississippi Mills, ON | Supplied by Bruce 2026-10-19 (client photos) as "mississippi-mills-ontario_097-1170x447.jpg" (1170 x 447 only, may look soft on wide screens) | Source and licence to confirm |
 | london-downtown-panorama-* | London, ON | Supplied by Bruce 2026-10-19 (client photos) as "London1.jpg" (1920 x 737); metadata: Camera+ app, 2017 | Source and licence to confirm |
 | fort-frances-post-office-* | Fort Frances, ON | Supplied by Bruce 2026-10-19 (client photos) as "Post_Office_Fort_Frances_Ontario_29036257497.jpg"; filename suggests a Flickr/Wikimedia upload, not verified | Source and licence to confirm |
-| brentwood-bay-aerial-* | Brentwood Bay, BC | Supplied by Bruce 2026-10-20 as "BrentwoodBay.jpg" | Source and licence to confirm |
+| brentwood-bay-aerial-* | Brentwood Bay, BC | Andrea.giese on Wikimedia Commons (per Bruce, 2026-10-20), supplied as "BrentwoodBay.jpg"; Commons file page not yet checked | Licence to confirm (Commons photos are usually CC BY-SA, which requires the credit and licence link) |
 | uptown-waterloo-king-street-* | Waterloo, ON | Supplied by Bruce 2026-10-19 (client photos) as "Uptown-Waterloo-crowds-walking-and-cars-on-street-scaled-1.jpg" | Source and licence to confirm |
 | guelph-downtown-basilica-* | Guelph, ON | Supplied by Bruce 2026-10-19 (client photos) as "Guelphdowntownpatio.webp" | Source and licence to confirm |
 | north-bay-gateway-arch-* | North Bay, ON | Supplied by Bruce 2026-10-19 as "Gateway-to-the-North-scaled.jpg" (2560 x 1707); cropped to drop the mileage sign on the left pillar (it lists the town of Swastika) | Source and licence to confirm |
