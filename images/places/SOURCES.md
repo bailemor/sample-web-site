@@ -12,15 +12,14 @@ Credits are shown on each photo and on photo-credits.html. Attributions supplied
 | waterloo-king-street-ion-* | Waterloo, ON | Supplied by Bruce 2026-10-19 (client photos) as "Waterloo1.webp" (1920 x 1080), cropped to remove a KPMG sign at top left | Source and licence to confirm |
 | uptown-waterloo-king-street-* | Waterloo, ON | Supplied by Bruce 2026-10-19 (client photos) as "Uptown-Waterloo-crowds-walking-and-cars-on-street-scaled-1.jpg" | Source and licence to confirm |
 | guelph-downtown-basilica-* | Guelph, ON | Supplied by Bruce 2026-10-19 (client photos) as "Guelphdowntownpatio.webp" | Source and licence to confirm |
+| north-bay-gateway-arch-* | North Bay, ON | Supplied by Bruce 2026-10-19 as "Gateway-to-the-North-scaled.jpg" (2560 x 1707); cropped to drop the mileage sign on the left pillar (it lists the town of Swastika) | Source and licence to confirm |
 | north-bay-waterfront-* | North Bay, ON | Supplied by Bruce 2026-10-19 (client photos) as "North Bay 1.jpg" (1920 x 640) | Source and licence to confirm |
 | canso-harbour-* | Canso, NS | Supplied by Bruce 2026-10-19 (client photos) as "Canso11.jpg" (1600 x 1200, taken 2007) | Source and licence to confirm |
 | iroquois-falls-lumberjack-* | Iroquois Falls, ON | Supplied by Bruce 2026-10-19 (client photos) as "2024-09-12-lumberjack-statue-iroquois-falls.jpg" (1136 x 938) | Source and licence to confirm |
-| cornwall-fall-* | Cornwall, ON | Ontario by Bike, supplied by Bruce as "Cornwall in Fall.jpg" (1024 x 711 only; mirrored left-to-right at Bruce's request; used as Our Work banner, may look soft on wide screens) | Credited; licence to be confirmed |
 | beamsville-bench-vineyard-* | Beamsville Bench, ON | Supplied by Bruce as "Hidden-Bench-Winery-3.jpeg" (2400 x 1600); file metadata: copyright Steven Elphick 2022 | Need permission (Bruce asking Hidden Bench) |
 
 ## Not used from the 2026-10-19 batch
 
-- Gateway-to-the-North (North Bay): the mileage sign lists the town of Swastika, which reads badly out of context.
 - KD-North-Bay-at-dusk-marina: metadata says copyright KathrynAnywhere.
 - London2: metadata says Scott Webb Photography.
 - London3: busy street with store advertising.
