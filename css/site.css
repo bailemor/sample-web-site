@@ -436,6 +436,7 @@ p:last-child { margin-bottom: 0; }
 .cs-lead { font: 400 21px/1.5 var(--font-serif) !important; color: var(--heading); }
 .cs-phases { list-style: none; counter-reset: phase; margin: var(--space-4) 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-1); }
 .cs-phases-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.cs-phases-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .cs-phases li { counter-increment: phase; background: var(--surface-brand); color: var(--on-brand); padding: var(--space-3); font-size: 15px !important; line-height: 1.35 !important; clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 0 100%); padding-right: var(--space-4); }
 .cs-phases strong { display: block; margin-bottom: var(--space-1); font: 700 18px/1.2 var(--font-serif); color: var(--accent); }
 .cs-phases strong::before { content: counter(phase) ". "; }
@@ -470,7 +471,7 @@ p:last-child { margin-bottom: 0; }
 .cs-top { margin: var(--space-4) 0 0; font-size: 15px; font-weight: 600; }
 @media (max-width: 860px) {
   .cs-index { grid-template-columns: minmax(0, 1fr); }
-  .cs-phases, .cs-phases-5 { grid-template-columns: minmax(0, 1fr); }
+  .cs-phases, .cs-phases-3, .cs-phases-5 { grid-template-columns: minmax(0, 1fr); }
   .cs-phases li { clip-path: none; border-left: 4px solid var(--accent); }
   .cs-flow-grid { grid-template-columns: minmax(0, 1fr); }
   .cs-flow-arrow { transform: rotate(90deg); justify-self: center; }
