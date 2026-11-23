@@ -17,6 +17,7 @@ Credits are shown on each photo and on photo-credits.html. Attributions supplied
 | canso-harbour-* | Canso, NS | Supplied by Bruce 2026-10-19 (client photos) as "Canso11.jpg" (1600 x 1200, taken 2007) | Source and licence to confirm |
 | iroquois-falls-lumberjack-* | Iroquois Falls, ON | Supplied by Bruce 2026-10-19 (client photos) as "2024-09-12-lumberjack-statue-iroquois-falls.jpg" (1136 x 938) | Source and licence to confirm |
 | lake-marina-aerial-* | North Bay, ON (marina aerial) | Supplied by Bruce 2026-11-22 as "marina-aerial.png" (2500 x 1875); no metadata; photographer not recorded | Permission pending (Bruce obtaining) |
+| tech-hub-night-* | Kitchener, ON (converted tannery building with Communitech, Desire2Learn and Google signs) | Supplied by Bruce 2026-11-23 as "ai-strategy-photo.png" (1920 x 1080); no metadata; source not recorded | Source and licence to confirm; shows third-party logos |
 | beamsville-bench-vineyard-* | Beamsville Bench, ON | Supplied by Bruce as "Hidden-Bench-Winery-3.jpeg" (2400 x 1600); file metadata: copyright Steven Elphick 2022 | Need permission (Bruce asking Hidden Bench) |
 | vineyard-rows-sunset-* | Vineyard rows at sunset (location unknown; may not be Ontario) | Supplied by Bruce 2026-11-22 as "vineyard-sunset.png" (2000 x 1333); Bruce pointed to a Blythwood Homes blog post (blythwoodhomes.ca, "Famous Vineyards and More", 2020) whose header photo carries no credit; original photographer unknown; no metadata in the file | Permission pending, Bruce obtaining |
 
