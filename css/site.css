@@ -194,10 +194,11 @@ p:last-child { margin-bottom: 0; }
 .deliver-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
 .deliver-list li { padding: var(--space-3) 0 var(--space-3) var(--space-5); border-bottom: 1px solid var(--rule); font-size: 18px; position: relative; }
 .deliver-list li::before { content: ""; position: absolute; left: 0; top: 50%; width: 16px; height: 6px; margin-top: -3px; background: var(--accent); clip-path: polygon(0 34%, 100% 0, 100% 66%, 0 100%); }
-.timeline { margin: 0; display: grid; gap: var(--space-3); }
-.timeline div { background: var(--surface-brand); color: var(--on-brand); padding: var(--space-4) var(--space-5); }
-.timeline dt { font: 700 40px/1.1 var(--font-serif); color: var(--accent); }
-.timeline dd { margin: var(--space-1) 0 0; font-size: 17px; }
+.deliver-time { margin: var(--space-4) 0 0; font-size: 18px; font-weight: 600; }
+.signs { display: grid; gap: var(--space-3); align-content: start; }
+.signs-title { margin: 0; font: 600 13px/1.4 var(--font-sans); letter-spacing: .1em; text-transform: uppercase; }
+.signs-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-3); }
+.signs-list li { background: var(--surface-brand); color: var(--on-brand); padding: var(--space-4) var(--space-5); border-left: 6px solid var(--accent); font: 400 22px/1.35 var(--font-serif); }
 .other-services { border-top: 1px solid var(--rule); padding-block: var(--space-6); }
 .other-services .wrap { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-3) var(--space-5); }
 .other-services p { margin: 0; font-size: 13px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
