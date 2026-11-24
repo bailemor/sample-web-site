@@ -526,3 +526,14 @@ p:last-child { margin-bottom: 0; }
 .cs-pager-label { font: 700 13px/1.4 var(--font-sans); letter-spacing: .1em; text-transform: uppercase; }
 @media (max-width: 860px) { .cs-cards, .cs-pager { grid-template-columns: minmax(0, 1fr); } .cs-pager-next { text-align: left; } }
 @media (max-width: 640px) { .cs-card-body, .cs-pager a { padding: var(--space-4); } .cs-page { padding-top: var(--space-5); } }
+
+/* About page: career at a glance strip */
+.glance { background: var(--surface-brand); color: var(--on-brand); padding-block: var(--space-7); }
+.glance-title { margin: 0 0 var(--space-5); font: 600 14px/1.4 var(--font-sans); letter-spacing: .1em; text-transform: uppercase; color: var(--accent); }
+.glance-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: var(--space-5); }
+.glance-list li { display: grid; gap: var(--space-2); align-content: start; border-top: 2px solid var(--accent); padding-top: var(--space-3); }
+.glance-num { font: 700 clamp(40px, 4.5vw, 56px)/1 var(--font-serif); color: var(--on-brand); }
+.glance-label { font-size: 16px; line-height: 1.45; }
+@media (max-width: 1000px) { .glance-list { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .glance-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } .glance { padding-block: var(--space-6); } }
+@media (max-width: 380px) { .glance-list { grid-template-columns: minmax(0, 1fr); } }
