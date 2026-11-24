@@ -180,6 +180,8 @@ p:last-child { margin-bottom: 0; }
 .work { background: var(--surface-alt); padding-block: var(--space-8); }
 .work h2, .deliver h2 { margin: 0 0 var(--space-5); font: 700 clamp(26px, 3vw, 34px)/1.2 var(--font-serif); color: var(--heading); }
 .work-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-4); }
+.work-list li:last-child:nth-child(odd) { grid-column: 1 / -1; }
+@media (min-width: 1100px) { .work-list:has(> li:nth-child(3):last-child) { grid-template-columns: repeat(3, minmax(0, 1fr)); } .work-list li:last-child:nth-child(3) { grid-column: auto; } }
 .work-list li { background: var(--surface); padding: var(--space-5); border-left: 4px solid var(--accent); }
 .work-list h3 { margin: 0 0 var(--space-3); font: 700 22px/1.25 var(--font-serif); color: var(--heading); }
 .work-list p { margin: 0; font-size: 17px; line-height: 1.55; }
@@ -194,10 +196,11 @@ p:last-child { margin-bottom: 0; }
 .deliver-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
 .deliver-list li { padding: var(--space-3) 0 var(--space-3) var(--space-5); border-bottom: 1px solid var(--rule); font-size: 18px; position: relative; }
 .deliver-list li::before { content: ""; position: absolute; left: 0; top: 50%; width: 16px; height: 6px; margin-top: -3px; background: var(--accent); clip-path: polygon(0 34%, 100% 0, 100% 66%, 0 100%); }
-.timeline { margin: 0; display: grid; gap: var(--space-3); }
-.timeline div { background: var(--surface-brand); color: var(--on-brand); padding: var(--space-4) var(--space-5); }
-.timeline dt { font: 700 40px/1.1 var(--font-serif); color: var(--accent); }
-.timeline dd { margin: var(--space-1) 0 0; font-size: 17px; }
+.deliver-time { margin: var(--space-4) 0 0; font-size: 18px; font-weight: 600; }
+.signs { display: grid; gap: var(--space-3); align-content: start; }
+.signs-title { margin: 0; font: 600 13px/1.4 var(--font-sans); letter-spacing: .1em; text-transform: uppercase; }
+.signs-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-3); }
+.signs-list li { background: var(--surface-brand); color: var(--on-brand); padding: var(--space-4) var(--space-5); border-left: 6px solid var(--accent); font: 400 22px/1.35 var(--font-serif); }
 .other-services { border-top: 1px solid var(--rule); padding-block: var(--space-6); }
 .other-services .wrap { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-3) var(--space-5); }
 .other-services p { margin: 0; font-size: 13px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
@@ -218,10 +221,19 @@ p:last-child { margin-bottom: 0; }
 
 /* AI Framework pillars */
 .section-intro { max-width: var(--measure); font-size: 18px; line-height: 1.6; margin-bottom: var(--space-5); }
-.framework-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-4); }
-.framework-list li { background: var(--surface); padding: var(--space-5) var(--space-4); border-top: 4px solid var(--accent); font: 700 22px/1.25 var(--font-serif); color: var(--heading); }
-@media (max-width: 860px) { .framework-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 420px) { .framework-list { grid-template-columns: minmax(0, 1fr); } }
+/* AI Strategy: five-phase framework */
+.phase-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: var(--space-3); }
+.phase-list li { background: var(--surface); display: flex; flex-direction: column; }
+.phase-list .phase-num { margin: 0; padding: var(--space-4) var(--space-4) 0; background: var(--surface-brand); color: var(--accent); font: 600 13px/1.4 var(--font-sans); letter-spacing: .1em; text-transform: uppercase; }
+.phase-list h3 { margin: 0; padding: var(--space-2) var(--space-4) var(--space-4); background: var(--surface-brand); color: var(--on-brand); font: 700 20px/1.25 var(--font-serif); min-height: 82px; }
+.phase-list p { margin: 0 var(--space-4) var(--space-3); }
+.phase-list .phase-tag { align-self: flex-start; margin-top: var(--space-4); padding: 2px var(--space-3); border: 1px solid var(--rule); background: var(--surface-alt); font-size: 14px; }
+.phase-list .phase-out { margin-top: auto; padding-bottom: var(--space-4); }
+.phase-risk { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: var(--space-4); align-items: center; margin-top: var(--space-3); padding: var(--space-4); background: var(--accent); color: var(--on-accent); }
+.phase-risk p { margin: 0; }
+.phase-risk .phase-risk-title { font: 600 14px/1.4 var(--font-sans); letter-spacing: .1em; text-transform: uppercase; }
+@media (max-width: 1000px) { .phase-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } .phase-list h3 { min-height: 0; } }
+@media (max-width: 560px) { .phase-list { grid-template-columns: minmax(0, 1fr); } .phase-risk { grid-template-columns: minmax(0, 1fr); gap: var(--space-2); } }
 
 /* Service names on the About page link to their service pages */
 .help-list h3 a { color: inherit; text-decoration: none; }
@@ -533,3 +545,14 @@ p:last-child { margin-bottom: 0; }
 .consent-btn:hover { background: var(--white); border-color: var(--white); }
 .consent-btn:focus-visible { outline: 2px solid var(--focus-ring-on-brand); outline-offset: 3px; }
 @media (max-width: 640px) { .consent-actions { width: 100%; } .consent-btn { flex: 1 1 0; } }
+
+/* About page: career at a glance strip */
+.glance { background: var(--surface-brand); color: var(--on-brand); padding-block: var(--space-7); }
+.glance-title { margin: 0 0 var(--space-5); font: 600 14px/1.4 var(--font-sans); letter-spacing: .1em; text-transform: uppercase; color: var(--accent); }
+.glance-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: var(--space-5); }
+.glance-list li { display: grid; gap: var(--space-2); align-content: start; border-top: 2px solid var(--accent); padding-top: var(--space-3); }
+.glance-num { font: 700 clamp(40px, 4.5vw, 56px)/1 var(--font-serif); color: var(--on-brand); }
+.glance-label { font-size: 16px; line-height: 1.45; }
+@media (max-width: 1000px) { .glance-list { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .glance-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } .glance { padding-block: var(--space-6); } }
+@media (max-width: 380px) { .glance-list { grid-template-columns: minmax(0, 1fr); } }
