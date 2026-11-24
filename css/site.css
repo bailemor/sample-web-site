@@ -353,13 +353,10 @@ p:last-child { margin-bottom: 0; }
 .lp-more .arrow { width: 0; height: 0; border-left: 8px solid var(--dark-green); border-block: 6px solid transparent; transition: transform .2s ease; }
 .lp-more:hover { text-decoration: underline; }
 .lp-more:hover .arrow { transform: translateX(3px); }
-/* Hero calls to action: one main button, one quieter text link on the same baseline */
+/* Hero call to action: one main button */
 .lp-btn { display: inline-block; padding: 14px var(--space-5); background: var(--dark-green); color: var(--on-brand); border: 2px solid var(--dark-green); font: 600 19px/1.25 var(--font-sans); text-decoration: none; }
 .lp-btn:hover { background: var(--black); border-color: var(--black); color: var(--white); }
 .lp-btn:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 3px; }
-.lp-link { font: 600 19px/1.25 var(--font-sans); color: var(--link); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
-.lp-link:hover { text-decoration-thickness: 3px; }
-.lp-link:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 3px; }
 /* The two slanted bars behind the portrait echo the acute accent in the logo */
 .lp-portrait { position: relative; isolation: isolate; margin: 0 var(--space-4) 0 var(--space-6); max-width: 400px; justify-self: end; width: 100%; }
 .lp-portrait::before, .lp-portrait::after { content: ""; position: absolute; z-index: -1; }
