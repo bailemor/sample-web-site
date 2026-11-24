@@ -29,3 +29,4 @@ Credits are shown on each photo and on photo-credits.html. Attributions supplied
 - London3: busy street with store advertising.
 - statue-bucheron-iroquois-falls-nord-ontario: second, weaker shot of the same statue.
 - mississippi-mills-ontario.jpg (466 x 107) and Waterloo3.jpg (678 x 452, watermarked): too small.
+| dispatch-console-* | Emergency communications centre (shared services case study) | Supplied by Bruce 2026-11-24 as "dispatch-photo.png" (2500 x 1667); no metadata; photographer not recorded. Shows an identifiable dispatcher; the wall screen carries a Government of Ontario logo and "911 EMS / 911 FIRE" panels | Source, licence and dispatcher consent to confirm |
