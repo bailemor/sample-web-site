@@ -221,19 +221,23 @@ p:last-child { margin-bottom: 0; }
 
 /* AI Framework pillars */
 .section-intro { max-width: var(--measure); font-size: 18px; line-height: 1.6; margin-bottom: var(--space-5); }
-/* AI Strategy: five-phase framework */
-.phase-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: var(--space-3); }
-.phase-list li { background: var(--surface); display: flex; flex-direction: column; }
-.phase-list .phase-num { margin: 0; padding: var(--space-4) var(--space-4) 0; background: var(--surface-brand); color: var(--accent); font: 600 13px/1.4 var(--font-sans); letter-spacing: .1em; text-transform: uppercase; }
-.phase-list h3 { margin: 0; padding: var(--space-2) var(--space-4) var(--space-4); background: var(--surface-brand); color: var(--on-brand); font: 700 20px/1.25 var(--font-serif); min-height: 82px; }
-.phase-list p { margin: 0 var(--space-4) var(--space-3); }
-.phase-list .phase-tag { align-self: flex-start; margin-top: var(--space-4); padding: 2px var(--space-3); border: 1px solid var(--rule); background: var(--surface-alt); font-size: 14px; }
-.phase-list .phase-out { margin-top: auto; padding-bottom: var(--space-4); }
-.phase-risk { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: var(--space-4); align-items: center; margin-top: var(--space-3); padding: var(--space-4); background: var(--accent); color: var(--on-accent); }
-.phase-risk p { margin: 0; }
-.phase-risk .phase-risk-title { font: 600 14px/1.4 var(--font-sans); letter-spacing: .1em; text-transform: uppercase; }
-@media (max-width: 1000px) { .phase-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } .phase-list h3 { min-height: 0; } }
-@media (max-width: 560px) { .phase-list { grid-template-columns: minmax(0, 1fr); } .phase-risk { grid-template-columns: minmax(0, 1fr); gap: var(--space-2); } }
+/* AI Strategy: Baile Mór AI Framework (four pillars + six principles) */
+.fw-pillars { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-3); }
+.fw-pillars > li { background: var(--surface); border-top: 6px solid var(--dark-green); padding: var(--space-4); }
+.fw-pillars > li.fw-risk { border-top-color: var(--accent); }
+.fw-pillars h3 { margin: 0 0 var(--space-2); font: 700 22px/1.25 var(--font-serif); color: var(--heading); }
+.fw-pillars .fw-aim { margin: 0 0 var(--space-4); font-style: italic; }
+.fw-label { margin: 0 0 var(--space-2); font: 600 13px/1.4 var(--font-sans); letter-spacing: .1em; text-transform: uppercase; color: var(--heading); }
+.fw-pillars ul { margin: 0; padding-left: 1.1em; list-style: disc; }
+.fw-pillars ul li + li { margin-top: var(--space-1); }
+.fw-principles-title { margin: var(--space-6) 0 var(--space-3); padding-bottom: var(--space-2); border-bottom: 2px solid var(--accent); font: 600 14px/1.4 var(--font-sans); letter-spacing: .1em; text-transform: uppercase; color: var(--heading); }
+.fw-principles { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: var(--space-2); }
+.fw-principles li { background: var(--surface-brand); color: var(--on-brand); padding: var(--space-3); border-top: 4px solid var(--accent); }
+.fw-principles h4 { margin: 0 0 var(--space-2); font: 700 18px/1.25 var(--font-serif); color: var(--on-brand); }
+.fw-principles p { margin: 0; font-size: 15px; line-height: 1.45; }
+.fw-deliver { margin: var(--space-3) 0 0; padding: var(--space-3) var(--space-4); background: var(--surface); }
+@media (max-width: 1000px) { .fw-pillars { grid-template-columns: repeat(2, minmax(0, 1fr)); } .fw-principles { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .fw-pillars { grid-template-columns: minmax(0, 1fr); } .fw-principles { grid-template-columns: minmax(0, 1fr); } }
 
 /* Service names on the About page link to their service pages */
 .help-list h3 a { color: inherit; text-decoration: none; }
