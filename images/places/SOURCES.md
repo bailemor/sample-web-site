@@ -5,7 +5,7 @@ Credits are shown on each photo and on photo-credits.html. Attributions supplied
 | File | Place | Credit and licence | Status |
 | --- | --- | --- | --- |
 | saint-john-harbour-bridge-* | Saint John, NB | diearle on Pixabay, "Saint John Water Harbour", Pixabay Content License, https://pixabay.com/photos/saint-john-3556952/ | Credited |
-| saanich-view-* | Saanich, BC | Supplied by Bruce 2026-10-20 as "Saanich.jpg" (1280 x 853, may look soft on wide screens) | Source and licence to confirm |
+| saanich-view-* | Saanich, BC (Mount Douglas from Mount Tolmie) | ecwiebe on Wikimedia Commons, "View of Mount Douglas from the south" (18 July 2017), CC BY-SA 4.0 (licence confirmed by Bruce from the Commons page, 2026-11-26); full-size original (5676 x 3784) supplied by Bruce 2026-11-26; resized to 800, 1280 and 2400 wide and tinted on the page | Licence confirmed; credit required |
 | almonte-aerial-* | Almonte (Mississippi Mills), ON | Supplied by Bruce 2026-10-20 as "Almonte2.jpg" (1996 x 1330); no EXIF author or copyright | Source and licence to confirm |
 | london-downtown-panorama-* | London, ON | Itskdoubt on Wikimedia Commons, "London Ontario Downtown & Victoria Park" (9 June 2017, from the City Hall observation deck), CC BY-SA 4.0 (licence confirmed by Bruce from the Commons page, 2026-11-26), https://commons.wikimedia.org/wiki/File:London_Ontario_Downtown_%26_Victoria_Park.jpg; original 5208 x 1997, resized to 1920 x 737 and tinted on the page | Licence confirmed; credit required |
 | fort-frances-post-office-* | Fort Frances, ON | Supplied by Bruce 2026-10-19 (client photos) as "Post_Office_Fort_Frances_Ontario_29036257497.jpg"; filename suggests a Flickr/Wikimedia upload, not verified | Source and licence to confirm |
@@ -20,6 +20,7 @@ Credits are shown on each photo and on photo-credits.html. Attributions supplied
 | vineyard-barn-aerial-* | Cave Spring barn and vineyard, Beamsville Bench, ON (per filename) | Supplied by Bruce 2026-11-23 as "LEAD-IMAGE_Cave-Spring-Barn-Vineyard-Exterior-2-scaled.jpg" (2560 x 1440); no author in metadata; earlier (2026-10-15) noted as likely Vintage Hotels venue photo | Permission needed (Cave Spring / Vintage Hotels) |
 | beamsville-bench-vineyard-* | Beamsville Bench, ON | Supplied by Bruce as "Hidden-Bench-Winery-3.jpeg" (2400 x 1600); file metadata: copyright Steven Elphick 2022 | Need permission (Bruce asking Hidden Bench) |
 | vineyard-rows-sunset-* | Vineyard rows at sunset (location unknown; may not be Ontario) | Supplied by Bruce 2026-11-22 as "vineyard-sunset.png" (2000 x 1333); Bruce pointed to a Blythwood Homes blog post (blythwoodhomes.ca, "Famous Vineyards and More", 2020) whose header photo carries no credit; original photographer unknown; no metadata in the file | Permission pending, Bruce obtaining |
+| library-rendering-evening-* | Guelph, ON (new Guelph Central Library, rendering) | Supplied by Bruce 2026-11-24. Source per Bruce 2026-11-26: Diamond Schmitt (architects), project page https://dsai.ca/projects/guelph-central-library/ (client City of Guelph). The page gives no image credit or licence; footer says "2019 Diamond Schmitt". Which of the page images it matches not verified | Permission needed from Diamond Schmitt |
 
 ## Not used from the 2026-10-19 batch
 
