@@ -158,6 +158,8 @@ p:last-child { margin-bottom: 0; }
 .page-hero .eyebrow a:focus-visible { outline-color: var(--focus-ring-on-brand); }
 .page-hero h1 { margin: 0; font: 700 clamp(40px, 6vw, 64px)/1.05 var(--font-serif); max-width: 18ch; text-wrap: balance; }
 .page-lead { margin: var(--space-4) 0 0; max-width: 36ch; font: italic 400 clamp(20px, 2.2vw, 26px)/1.4 var(--font-serif); color: var(--accent); text-wrap: pretty; }
+.page-lead a { color: inherit; }
+.page-lead a:focus-visible { outline-color: var(--focus-ring-on-brand); }
 
 /* Services overview */
 .service-index { padding-block: var(--space-8); }
