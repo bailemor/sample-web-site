@@ -37,3 +37,26 @@ document.getElementById('year').textContent = new Date().getFullYear();
     if (e.key === 'Escape' && btn.offsetParent !== null) { e.stopPropagation(); setOpen(false); btn.focus(); }
   });
 })();
+// Pronunciation buttons: play the clip only when the visitor presses the button (no autoplay).
+// aria-pressed shows the playing state; pressing again while it plays stops it.
+(function () {
+  var buttons = document.querySelectorAll('[data-pronounce]');
+  Array.prototype.forEach.call(buttons, function (btn) {
+    var audio = null;
+    btn.setAttribute('aria-pressed', 'false');
+    function done() { btn.setAttribute('aria-pressed', 'false'); }
+    btn.addEventListener('click', function () {
+      if (!audio) {
+        audio = new Audio(btn.getAttribute('data-pronounce'));
+        audio.addEventListener('ended', done);
+        audio.addEventListener('pause', done);
+        audio.addEventListener('error', done);
+      }
+      if (!audio.paused) { audio.pause(); audio.currentTime = 0; return; }
+      audio.currentTime = 0;
+      btn.setAttribute('aria-pressed', 'true');
+      var played = audio.play();
+      if (played && played.catch) played.catch(done);
+    });
+  });
+})();
