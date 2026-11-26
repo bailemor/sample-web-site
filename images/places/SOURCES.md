@@ -34,3 +34,9 @@ Credits are shown on each photo and on photo-credits.html. Attributions supplied
 ## Removed 2026-11-26 (no longer shown on any page)
 
 north-bay-waterfront-*, brentwood-bay-aerial-*, guelph-downtown-basilica-*, library-rendering-* (daytime; the evening version stays) and vineyard-rows-sunset-* were deleted so they can no longer be downloaded from the public site. Their rows above are kept for the record.
+
+## Candidates (not on the site yet)
+
+| File | Place | Credit and licence | Status |
+| --- | --- | --- | --- |
+| irrigation (Bruce upload 2026-11-26, project files photos/irrigation.png and photos/irrigation-web.jpg) | Vineyard, Niagara (for the irrigation governance case study) | Source per Bruce 2026-11-26: Niagara Region, Irrigation Initiative page, https://www.niagararegion.ca/projects-and-priorities/plans-and-strategies/irrigation-initiative/ (hero image /media/sqpbipod/irrigation.webp, alt "winery"; no credit or caption). Region's Disclaimers and Terms of Use: photos "may have been purchased for limited use from third parties"; "Before using, contact us to determine if the media is protected by copyright"; no commercial reuse without the Region's consent | Permission needed from Niagara Region before use |
