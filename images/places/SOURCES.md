@@ -5,7 +5,7 @@ Credits are shown on each photo and on photo-credits.html. Attributions supplied
 | File | Place | Credit and licence | Status |
 | --- | --- | --- | --- |
 | saint-john-harbour-bridge-* | Saint John, NB | diearle on Pixabay, "Saint John Water Harbour", Pixabay Content License, https://pixabay.com/photos/saint-john-3556952/ | Credited |
-| saanich-view-* | Saanich, BC | Supplied by Bruce 2026-10-20 as "Saanich.jpg" (1280 x 853, may look soft on wide screens) | Source and licence to confirm |
+| saanich-view-* | Saanich, BC (Mount Douglas from Mount Tolmie) | ecwiebe on Wikimedia Commons, "View of Mount Douglas from the south" (18 July 2017), CC BY-SA 4.0 (licence confirmed by Bruce from the Commons page, 2026-11-26); original 5676 x 3784, supplied resized to 1280 x 853 and tinted on the page | Licence confirmed; credit required |
 | almonte-aerial-* | Almonte (Mississippi Mills), ON | Supplied by Bruce 2026-10-20 as "Almonte2.jpg" (1996 x 1330); no EXIF author or copyright | Source and licence to confirm |
 | london-downtown-panorama-* | London, ON | Itskdoubt on Wikimedia Commons, "London Ontario Downtown & Victoria Park" (9 June 2017, from the City Hall observation deck), CC BY-SA 4.0 (licence confirmed by Bruce from the Commons page, 2026-11-26), https://commons.wikimedia.org/wiki/File:London_Ontario_Downtown_%26_Victoria_Park.jpg; original 5208 x 1997, resized to 1920 x 737 and tinted on the page | Licence confirmed; credit required |
 | fort-frances-post-office-* | Fort Frances, ON | Supplied by Bruce 2026-10-19 (client photos) as "Post_Office_Fort_Frances_Ontario_29036257497.jpg"; filename suggests a Flickr/Wikimedia upload, not verified | Source and licence to confirm |
