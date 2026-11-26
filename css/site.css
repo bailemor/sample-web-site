@@ -568,3 +568,6 @@ p:last-child { margin-bottom: 0; }
 .say-btn:hover { background: var(--dark-green); color: var(--on-brand); }
 .say-btn:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
 .say-btn[aria-pressed="true"] { background: var(--dark-green); color: var(--on-brand); }
+/* Positioning line under the main headline: Georgia, with a lime bar as a fill (never lime text on light ground) */
+.positioning { margin: 0 0 var(--space-4); padding-left: var(--space-3); border-left: 4px solid var(--accent); max-width: 30ch; font: 700 clamp(21px, 2.4vw, 27px)/1.3 var(--font-serif); color: var(--heading); text-wrap: balance; }
+.page-hero .positioning { margin: var(--space-4) 0 0; color: var(--on-brand); }
