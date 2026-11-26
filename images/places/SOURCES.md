@@ -7,7 +7,7 @@ Credits are shown on each photo and on photo-credits.html. Attributions supplied
 | saint-john-harbour-bridge-* | Saint John, NB | diearle on Pixabay, "Saint John Water Harbour", Pixabay Content License, https://pixabay.com/photos/saint-john-3556952/ | Credited |
 | saanich-view-* | Saanich, BC | Supplied by Bruce 2026-10-20 as "Saanich.jpg" (1280 x 853, may look soft on wide screens) | Source and licence to confirm |
 | almonte-aerial-* | Almonte (Mississippi Mills), ON | Supplied by Bruce 2026-10-20 as "Almonte2.jpg" (1996 x 1330); no EXIF author or copyright | Source and licence to confirm |
-| london-downtown-panorama-* | London, ON | Supplied by Bruce 2026-10-19 (client photos) as "London1.jpg" (1920 x 737); metadata: Camera+ app, 2017 | Source and licence to confirm |
+| london-downtown-panorama-* | London, ON | Itskdoubt on Wikimedia Commons, "London Ontario Downtown & Victoria Park" (9 June 2017, from the City Hall observation deck), CC BY-SA 4.0 (licence confirmed by Bruce from the Commons page, 2026-11-26), https://commons.wikimedia.org/wiki/File:London_Ontario_Downtown_%26_Victoria_Park.jpg; original 5208 x 1997, resized to 1920 x 737 and tinted on the page | Licence confirmed; credit required |
 | fort-frances-post-office-* | Fort Frances, ON | Supplied by Bruce 2026-10-19 (client photos) as "Post_Office_Fort_Frances_Ontario_29036257497.jpg"; filename suggests a Flickr/Wikimedia upload, not verified | Source and licence to confirm |
 | brentwood-bay-aerial-* | Brentwood Bay, BC | Andrea.giese on Wikimedia Commons, CC BY-SA 4.0 (licence confirmed by Bruce from the Commons page, 2026-10-20), https://commons.wikimedia.org/wiki/File:BrentwoodBay.jpg; resized only | Credited |
 | uptown-waterloo-king-street-* | Waterloo, ON | Supplied by Bruce 2026-10-19 (client photos) as "Uptown-Waterloo-crowds-walking-and-cars-on-street-scaled-1.jpg" | Source and licence to confirm |
@@ -29,3 +29,7 @@ Credits are shown on each photo and on photo-credits.html. Attributions supplied
 - statue-bucheron-iroquois-falls-nord-ontario: second, weaker shot of the same statue.
 - mississippi-mills-ontario.jpg (466 x 107) and Waterloo3.jpg (678 x 452, watermarked): too small.
 | dispatcher-from-behind-* | 9-1-1 dispatch console (shared services case study) | Supplied by Bruce 2026-11-24 as "dispatcher-from-behind.png" (2560 x 1790); no metadata; Bruce says it comes from a Prince Albert Daily Herald article, https://paherald.sk.ca/next-generation-911-now-live-at-parkland-medical-communication-centre/ (Parkland Medical Communication Centre, Saskatchewan; not verified, site not reachable from here). Dispatcher seen from behind, face not visible; screen contents already blurred | Permission pending (news outlet photo) |
+
+## Removed 2026-11-26 (no longer shown on any page)
+
+north-bay-waterfront-*, brentwood-bay-aerial-*, guelph-downtown-basilica-*, library-rendering-* (daytime; the evening version stays) and vineyard-rows-sunset-* were deleted so they can no longer be downloaded from the public site. Their rows above are kept for the record.
